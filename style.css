@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto' , sans-serif;
+    scroll-behavior: smooth;
+}
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 24px 0;
+    background-color: #5D7B6F;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: .5s ease;
+    box-shadow: 0 8px #0000001e;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.header .logo span {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.header .navs {
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+}
+.header .navs .navbars {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.navbars li {
+    list-style: none;
+    margin-left: 26px;
+}
+
+.navbars li a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbars li a::after {
+    content: "";
+    background-color: #ffffff;
+    display: block;
+    width: 0;
+    margin: auto;
+    height: 2px;
+    transition: .5s;
+}
+
+.navbars li a:hover::after {
+    width: 100%;
+}
+
+.header .menu {
+    display: none;
+}
+/* About */
+.about-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content .logo-img {
+    width: 220px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.about-content .text-content {
+    margin-left: 16px;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.text-content span {
+    color: #5D7B6F;
+}
+
+/* Product */
+.new-product, .hot-product {
+    margin-top: 30px;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    transition: 1s ease;
+}
+
+.img-top {
+    width: 100%;
+}
+
+.hightlight {
+    background-color: #5D7B6F;
+    width: 4px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card-title {
+    height: 94px;
+    text-align: justify;
+    text-decoration: none;
+    color: black;
+    transition: .5s ease;
+}
+
+.card-title:hover {
+    color: #5D7B6F;
+}
+
+.btn-cart {
+    width: fit-content;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px;
+    background-color: #5D7B6F;
+    border-radius: 16px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.btn-cart:hover {
+    color: #ffffff;
+    background-position: 0 100%;
+    background-image: linear-gradient( to right, #108dc7,  #ef8e38);
+}
